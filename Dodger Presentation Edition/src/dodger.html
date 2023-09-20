@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+	<title>Dodger</title>
+</head>
+<body>
+
+    <div id="gameover">
+		<div class="panel">
+        <h2>Game Over</h2>
+        <p>Your final score is: <a id="endscore"></a></p>
+        <p id="newhighscore"></p>
+		<button id="reload">Try again</button>
+		</div>
+    </div>
+
+
+
+    <div id="wrapper">
+
+    <main>
+        <div class="player"></div>
+
+        <div id="game">
+
+            <div id="menu">
+                <div class="column">
+                  <div id="play-con">
+                    <h1>Dodger</h1>
+                    <h2>Steuerung</h2>
+                    <p>Bewege den Kreis mit den Pfeiltasten (links & rechts) oder verwende die Maus um ihn möglichst lange von den Blauen Balken fern zu halten</p>
+            		    <button class="playgame">Play</button>
+                  </div>
+                  <div id="info-con">
+                    <h2>Erstellung</h2>
+                    <p>Dieses Projekt ist im Rahmen des AIF (Angewandte Informatik) Unterrichts entstanden und wurde über die Jahre immer wieder auf persönlicher Basis weiter entwickelt.</p>
+                    <p><i>Copyright Markus Baumgartner 2017 - 2018</i></p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div id="highscore-con">
+                    <p id="Highscore">
+                      <span id="credhighscore">[highscore]</span>
+                      <span id="credname"></br>Highscore</span>
+                    </p>
+                  </div>
+                  <div id="scores-con">
+                    <h2>Scores</h2>
+                    <section id="list">
+                      [list]
+                    </section>
+                  </div>
+                </div>
+            </div>
+
+            <div id="gamecontainer">
+
+                <div id="wall">
+                    <div class="wall1"></div>
+                    <div class="wall2"></div>
+                    <div class="wall3"></div>
+                    <div class="wall4"></div>
+
+                </div>
+
+                <div id="scoreboard">
+                    <p><strong>Score:</strong></p>
+                    <p id="score">0</p>
+                    <p id="pattern"></p>
+                </div>
+
+                <div id="controls">
+                    <div id="left"></div>
+                    <div id="right"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p id="info">Game will automatically start in easy mode</br>if no selection was made.</br></br>Controls: Left and Right Arrow Keys</p>
+        <p id="text"><p>&copy; Copyright 2017 </br> Markus Baumgartner</p></p>
+    </footer>
+
+    </div>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "dodger",
+  "version": "1.0.0",
+  "description": "A small game created because nobody else did",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Markus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

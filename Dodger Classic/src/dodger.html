@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+	<title>Dodger</title>
+</head>
+<body>
+
+    <div id="gameover">
+		<div class="panel">
+        <h2>Game Over</h2>
+        <p>Your final score is: <a id="endscore"></a></p>
+		<button id="reload">Try again</button>
+		</div>
+    </div>
+
+
+
+    <div id="wrapper">
+
+    <main>
+        <div class="player"></div>
+
+        <div id="game">
+            <div>
+
+                <div id="wall">
+                    <div class="wall1"></div>
+                    <div class="wall2"></div>
+                    <div class="wall3"></div>
+                    <div class="wall4"></div>
+
+                </div>
+
+                <div id="menu">
+                    <a name="top1" id="top"><p class="playgame">Play</p></a>
+                    <p class="dif">-Button-</p>
+                    <p class="dif1">-Button-</p>
+                    <a href="#bottom"><p class="dif2"><img id="arrowbottom" src="bottom.png" alt="go down"/></p></a>
+                </div>
+
+            </div>
+
+            <div id="scoreboard">
+                <p><strong>Score:</strong></p>
+                <p id="score"></p>
+                <p id="pattern"></p>
+            </div>
+
+            <div id="controls">
+                <div id="left"><img src="left.png" alt="LEFT" height="100%" width="100%"/></div>
+                <div id="right"><img src="right.png" alt="RIGHT" height="100%" width="100%" /></div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="credits">
+        <a href="#top"><div id="topbtn"><img id="arrowbottom" src="top.png" alt="go down" /></div></a>
+
+        <div id="playerinfo">
+
+            <img src="p1.gif" alt="player"/>
+
+            <p id="Highscore:"><span id="credname"></span></br>Highscore: <span id="credhighscore">--:--</span></p>
+
+        </div>
+
+        <div id="spacer"></div>
+        <a href="" target="_blank"><img src="logo.png" height="100%" width="100%"></a>
+        <a name="bottom1" id="bottom">
+            <p>&copy; Copyright 2017 </br> Markus Baumgartner</p></a>
+    </div>
+    <footer>
+        <p id="info">Game will automatically start in easy mode</br>if no selection was made.</br></br>Controls: Left and Right Arrow Keys</p>
+        <p id="text"><p>&copy; Copyright 2017 </br> Markus Baumgartner</p></p>
+    </footer>
+
+    </div>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>

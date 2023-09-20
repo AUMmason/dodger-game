@@ -1,0 +1,324 @@
+@media only screen and (min-width:30rem){
+
+body{
+    background-color:#454545;
+}
+
+/*
+
+    #07ad00 Grün
+    #454545 Grau (hell)
+    #353535 Grau (mittel)
+    #303030 Grau (dunkel)
+
+    #FFA500 Orange
+    #1E90FF Dodgerblue
+    #07ad00 Grün
+    #ed1313 Rot
+
+
+*/
+
+@keyframes startup{
+    from{
+        background-position:95% 0; 
+    }
+    to{
+        background-position:0% 0;
+    }
+}
+
+.startanim{
+    animation:startup 0.7s;
+}
+
+
+@keyframes Zoomin{
+    from{
+        transform:scale(0.2);
+    }
+
+    to{
+        transform:scale(1);
+    }
+}
+
+main{
+    animation:Zoomin 0.5s;
+    margin:auto;
+    width:25rem;
+    margin-top:5rem;
+}
+
+#credits{
+    display:none;
+}
+
+#headline{
+    background-color:#606060;
+}
+
+p{  
+    padding-top:0.5rem;
+    font-family:sans-serif;
+    font-size:1rem;
+    text-align:center;
+}
+
+#game {
+    background-color: #606060;
+}
+
+
+#menu{
+    display:block;
+}
+
+#menu p:hover{
+    cursor:pointer;
+}
+
+.playgame{
+    height:6.25rem;
+    width:25rem;
+    font-size:1.8rem;
+    padding:2rem;
+    background-size:200% 100%;
+    background-image:linear-gradient(to right, orange 50%, transparent 50%);
+    transition:background-position 1s;
+    background-position:100% 0;
+}
+
+.playgame:hover{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.playgamec{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.dif{
+    height:6.25rem;
+    width:25rem;
+    font-size:1.8rem;
+    padding:2rem;
+    background-size:200% 100%;
+    background-image:linear-gradient(to right, dodgerblue 50%, transparent 50%);
+    transition:background-position 1s;
+    background-position:100% 0;
+}
+
+.dif:hover{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.difc{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.dif1{
+    height:6.25rem;
+    width:25rem;
+    font-size:1.8rem;
+    padding:2rem;
+    background-size:200% 100%;
+    background-image:linear-gradient(to right, #07ad00 50%, transparent 50%);
+    transition:background-position 1s;
+    background-position:100% 0;
+}
+
+.dif1:hover{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.dif1c{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.dif2{
+    height:6.25rem;
+    width:25rem;
+    font-size:1.8rem;
+    padding:2rem;
+    background-size:200% 100%;
+    background-image:linear-gradient(to right, #ed1313 50%, transparent 50%);
+    transition:background-position 1s;
+    background-position:100% 0;
+}
+
+.dif2:hover{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+.dif2c{
+    background-position:0% 0;
+    transition:background-position 0.5s;
+}
+
+                /*Position*/
+.player{
+    height:2rem;
+    width:2rem;
+    background-color:#242424;
+    border:0.25rem black solid;
+    border-radius:0.5rem;
+    display:none;
+    transition: left 0.15s, background-color 0.3s;
+}
+
+.playerstate1{
+    position:relative;
+    top:27.5rem;
+    left:2.25rem;
+    background-color:orange;
+}
+
+.playerstate2{
+    top:27.5rem;
+    left:8.5rem;
+    position:relative;
+    background-color:dodgerblue;
+}
+
+.playerstate3{
+    position:relative;
+    top:27.5rem;
+    left:14.75rem;
+    background-color:#07ad00;
+}
+
+.playerstate4{
+    position:relative;
+    top:27.5rem;
+    left:21rem;
+    background-color:#ed1313;
+}
+
+    /**/
+
+#wall{
+    height:25rem;
+    display:none;
+    margin:auto;
+    width:25rem;
+}
+
+.wall1{
+    width:6.25rem;
+    height:25rem;
+    background-size:100% 200%;
+    background-image:linear-gradient(to bottom, orange 50%, black 50%);
+    transition:background-position 0.2s, background-color 0.3s;
+}
+
+.wall2{
+    width:6.25rem;
+    height:25rem;
+    background-size:100% 200%;
+    background-image:linear-gradient(to bottom, dodgerblue 50%, black 50%);
+    transition:background-position 0.2s, background-color 0.3s;
+}
+.wall3{
+    width:6.25rem;
+    height:25rem;
+    background-size:100% 200%;
+    background-image:linear-gradient(to bottom, #07ad00 50%, black 50%);
+    transition:background-position 0.2s, background-color 0.3s;
+}
+.wall4{
+    width:6.25rem;
+    height:25rem;
+    background-size:100% 200%;
+    background-image:linear-gradient(to bottom, #ed1313 50%, black 50%);
+    transition:background-position 0.2s, background-color 0.3s;
+}
+
+/*charge*/
+
+.wallcharge{
+    background-color:black;
+    background-position:0% -15%;
+}
+
+/*close*/
+.wallclose{
+    transition:background-position 0.2s background-color 0.2s;
+    background-position:0% -90%;
+}
+
+.walldown{
+    transition:background-position 0.1s background-color 0.2s;
+    background-position:0% -100%;
+}
+
+
+#scoreboard{
+    display:none;
+    background-color:#606060;
+    padding:0.5rem;
+    height:4.5rem;
+}
+
+#gameover{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.80);
+    box-shadow:0rem 0.5rem 1rem black;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:5;
+    color:white;
+    text-align:center;
+    padding-top:12rem;
+    display:none;
+}
+
+#controls{
+    
+    display:flex;
+    display:none;
+}
+
+#controls div{
+    background-color:#606060;
+    transition: background-color 0.1s;
+    
+}
+
+#controls div:hover{
+    background-color:#505050;
+    cursor:pointer;
+    transition: background-color 0.1s;
+}
+
+#controls img{
+    height:auto;
+    width:100%;
+}
+
+i{
+    margin-top:2rem;
+    font-size:2rem;
+    background-color:dodgerblue;
+    padding:1rem;
+    display:block;
+    width:15rem;
+    margin:auto;
+    transition:box-shadow 0.3s;
+}
+
+i:hover{
+    cursor:pointer;
+    box-shadow:0rem 0.5rem 3rem rgba(0, 0, 0, 0.50);
+    transition:box-shadow 0.3s;
+}
+
+}/*media querry*/

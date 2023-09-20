@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Redirect</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+    <div id="playerpanel">
+        <div class="panel">
+            <p>
+			Please note that this is a very early version of the game! Thank you.</br></br>
+			For the best experience consider using a browser like Opera, Google Chrome or Firefox.</br>
+			Due to heavy gameplay and graphical bugs Internet Explorer, Microsoft EDGE and the Safari web browser are not recommended.
+			<br/><br/>
+			Controls: Left or Right Arrow Key or the Buttons at the bottom of the Screen.
+			</p>
+            <button onclick="Submitstats()">READY</button>
+        </div>
+    </div>
+
+<script>
+function Redirect(){
+
+window.location.replace("");
+
+}
+
+
+
+function Submitstats() {
+    $('#panel').css('animation', 'Zoomout 0.2s');
+    $('#playerpanel').stop().fadeOut(200);
+    $('#wrapper').removeClass('filterblur');
+	Redirect();
+}
+
+var playerstats = "none"
+
+if (playerstats/*.playername*/ != "none") {
+
+    $('#playerpanel').css('display', 'none');
+
+} else {
+
+    $('#playerpanel').css('display', 'block');
+    $('#wrapper').addClass('filterblur');
+
+}
+
+
+
+</script>
+
+</body>
+</html>
