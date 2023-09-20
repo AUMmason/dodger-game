@@ -15,3 +15,4 @@ Also, a lot of things learned regarding Node.js!
 Thanks to a good friend (MICK) for assisting me during the presentation!
 
 ![image](https://github.com/AUMmason/dodger-game/assets/35566401/92db7fc9-b789-437c-b592-d25ee613f102)
+![image](https://github.com/AUMmason/dodger-game/assets/35566401/49ab864a-90cc-48b8-a477-65117ea26a62)
